@@ -11,7 +11,7 @@
 
     <properties>
         <aws-sdk.version>2.25.13</aws-sdk.version>
-        <version.spring.cloud.azure>5.19.0</version.spring.cloud.azure>
+        <version.spring.cloud.azure>5.20.0</version.spring.cloud.azure>
     </properties>
 
     <artifactId>assets-manager-web</artifactId>
@@ -29,11 +29,11 @@
         </dependency>
         <dependency>
             <groupId>com.azure.spring</groupId>
-             <artifactId>spring-cloud-azure-starter</artifactId>
-         </dependency>
-         <dependency>
-             <groupId>com.azure.spring</groupId>
-             <artifactId>spring-messaging-azure-servicebus</artifactId>
+            <artifactId>spring-cloud-azure-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.azure.spring</groupId>
+            <artifactId>spring-messaging-azure-servicebus</artifactId>
         </dependency>
         <dependency>
             <groupId>com.azure</groupId>
@@ -75,6 +75,10 @@
             <artifactId>postgresql</artifactId>
             <scope>runtime</scope>
         </dependency>
+        <dependency>
+            <groupId>com.azure.spring</groupId>
+            <artifactId>spring-cloud-azure-starter-jdbc-postgresql</artifactId>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
@@ -85,12 +89,12 @@
                 <version>12.25.0</version>
             </dependency>
             <dependency>
-                 <groupId>com.azure.spring</groupId>
-                 <artifactId>spring-cloud-azure-dependencies</artifactId>
-                 <version>${version.spring.cloud.azure}</version>
-                 <type>pom</type>
-                 <scope>import</scope>
-             </dependency>
+                <groupId>com.azure.spring</groupId>
+                <artifactId>spring-cloud-azure-dependencies</artifactId>
+                <version>${version.spring.cloud.azure}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
